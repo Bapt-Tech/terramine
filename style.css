@@ -4,3 +4,9 @@ html {
     font-family: 'Poppins', sans-serif;
 }
 
+.text-info {
+    margin-bottom: 40px;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+}
