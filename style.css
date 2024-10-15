@@ -18,6 +18,27 @@ html {
     border-radius: 10px;
 }
 
+.xp-miner {
+    margin-bottom: 30px;
+    background-color: #181616;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.xp-farmer {
+    margin-bottom: 30px;
+    background-color: #181616;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.xp-hunter {
+    margin-bottom: 30px;
+    background-color: #181616;
+    padding: 20px;
+    border-radius: 10px;
+}
+
 nav ul li a, button {
     background-color: #0a2d44;
     padding: 10px 20px;
