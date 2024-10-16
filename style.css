@@ -49,6 +49,34 @@ nav ul li a {
     border-radius: 10px;
 }
 
+.rules-preamble {
+    margin-bottom: 40px;
+    background-color: #00000034;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.rules-rules {
+    margin-bottom: 40px;
+    background-color: #00000034;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.rules-enforcement {
+    margin-bottom: 40px;
+    background-color: #00000034;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.rules-appeals {
+    margin-bottom: 40px;
+    background-color: #00000034;
+    padding: 20px;
+    border-radius: 10px;
+}
+
 .jobs-note {
     margin-bottom: 40px;
     background-color: #080320;
