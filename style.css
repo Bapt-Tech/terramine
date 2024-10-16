@@ -127,7 +127,7 @@ nav ul li a, button {
 }
 
 nav ul li a:hover, button:hover {
-    background-color: #05263d;
+    background-color: #0f574b;
     transform: scale(1.05);
 }
 
