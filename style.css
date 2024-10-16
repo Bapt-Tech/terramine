@@ -78,7 +78,7 @@ nav ul li a {
 
 .jobs-note {
     margin-bottom: 40px;
-    background-color: #080320;
+    background-color: #101013;
     padding: 20px;
     border-radius: 10px;
 }
@@ -116,7 +116,7 @@ nav ul li a {
 
 /* Button & Hover Effects */
 nav ul li a, button {
-    background-color: #242121;
+    background-color: #645f5f;
     padding: 10px 20px;
     border: none;
     border-radius: 10px;
