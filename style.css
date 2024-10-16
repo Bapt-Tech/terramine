@@ -27,7 +27,6 @@ nav ul li a {
     transition: color 0.3s ease;
 }
 
-
 .text-info {
     margin-bottom: 40px;
     background-color: #222;
@@ -140,4 +139,11 @@ nav ul li a:hover, button:hover {
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+
+.footer {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
 }
