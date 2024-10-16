@@ -131,11 +131,6 @@ nav ul li a:hover, button:hover {
     transform: scale(1.05);
 }
 
-/* Animations */
-#title {
-    animation: fadeIn 2s ease;
-}
-
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -148,7 +143,7 @@ nav ul li a:hover, button:hover {
     justify-content: center;
 }
 
-.title {
+.title-place {
     margin-top: 30px;
     margin-bottom: 30px;
     display: flex;
