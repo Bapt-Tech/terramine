@@ -48,6 +48,13 @@ nav ul li a {
     border-radius: 10px;
 }
 
+.content-note {
+    margin-bottom: 40px;
+    background-color: #222222;
+    padding: 20px;
+    border-radius: 10px;
+}
+
 .rules-preamble {
     margin-bottom: 40px;
     background-color: #00000034;
