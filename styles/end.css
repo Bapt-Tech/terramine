@@ -18,6 +18,14 @@ html {
     border-radius: 10px;
 }
 
+.end-textures {
+    margin-bottom: 35px;
+    margin-top: 35px;
+    margin-left: 35px;
+    margin-right: 35px;
+    justify-content: left;
+}
+
 nav {
     padding: 10px 0;
 }
