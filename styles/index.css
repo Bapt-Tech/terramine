@@ -3,63 +3,63 @@ html {
     color: #35615b;
     font-family: 'Poppins', sans-serif;
 }
-
-/* Définition des variables CSS pour faciliter les ajustements */
-:root {
-    --primary-color: #645f5f;
-    --hover-color: #35615b;
-    --text-color: #121212;
-    --text-hover-color: #ffffff;
-    --transition-duration: 0.3s;
-}
-
-/* Navigation principale */
-.navbar {
+nav {
     padding: 10px 0;
 }
 
-.navbar__menu {
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
-.navbar__item {
+nav ul li {
     margin: 0 15px;
 }
 
-.navbar__link, .btn {
-    display: inline-block;
-    color: var(--text-color);
-    background-color: var(--primary-color);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 10px;
+nav ul li a {
+    color: #121212;
     text-decoration: none;
     font-weight: 500;
-    transition: background-color var(--transition-duration) ease, 
-                transform var(--transition-duration) ease, 
-                color var(--transition-duration) ease;
-    cursor: pointer;
+    transition: color 0.3s ease;
 }
 
-/* Effet de survol pour les liens et boutons */
-.navbar__link:hover, .btn:hover {
-    background-color: var(--hover-color);
-    color: var(--text-hover-color);
-    transform: scale(1.05);
-}
-
-/* Animation de fondu pour le titre */
+/* Animations */
 #title {
-    animation: fadeIn var(--transition-duration) ease-in-out;
+    animation: fadeIn 2s ease;
 }
 
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+
+/* Button & Hover Effects */
+nav ul li a {
+    background-color: #645f5f;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button {
+    background-color: #645f5f;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+nav ul li a:hover, button:hover {
+    background-color: #35615b;
+    transform: scale(1.05);
 }
 
 .footer {
