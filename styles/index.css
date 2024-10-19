@@ -41,8 +41,10 @@ nav ul li a {
     }
 }
 
-nav ul li a, button {
-    background-color: #757575;
+nav ul li a,
+button {
+    background-color: #1e1e1e;
+    color: #ffffff; /* Pour rendre le texte des boutons lisible */
     padding: 12px 25px;
     border: none;
     border-radius: 12px;
@@ -51,7 +53,8 @@ nav ul li a, button {
     cursor: pointer;
 }
 
-nav ul li a:hover, button:hover {
+nav ul li a:hover,
+button:hover {
     background-color: #42855b;
     transform: scale(1.1);
 }
@@ -64,15 +67,18 @@ nav ul li a:hover, button:hover {
     nav ul li {
         margin: 10px 0;
     }
-    nav ul li a, button {
+    nav ul li a,
+    button {
         padding: 10px;
     }
 }
 
-nav ul li a:focus, button:focus {
+nav ul li a:focus,
+button:focus {
     outline: 3px solid #42855b;
     outline-offset: 3px;
 }
+
 
 .footer {
     margin-top: 30px;
