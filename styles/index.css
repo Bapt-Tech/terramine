@@ -4,61 +4,57 @@ html {
     font-family: 'Poppins', sans-serif;
 }
 
-nav {
+/* Définition des variables CSS pour faciliter les ajustements */
+:root {
+    --primary-color: #645f5f;
+    --hover-color: #35615b;
+    --text-color: #121212;
+    --text-hover-color: #ffffff;
+    --transition-duration: 0.3s;
+}
+
+/* Navigation principale */
+.navbar {
     padding: 10px 0;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+.navbar__menu {
     display: flex;
     justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-nav ul li {
+.navbar__item {
     margin: 0 15px;
 }
 
-nav ul li a {
-    color: #121212;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.text-info {
-    margin-bottom: 40px;
-    background-color: #222;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-/* Animations */
-#title {
-    animation: fadeIn 2s ease;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-/* Button & Hover Effects */
-nav ul li a, button {
-    background-color: #645f5f;
+.navbar__link, .btn {
+    display: inline-block;
+    color: var(--text-color);
+    background-color: var(--primary-color);
     padding: 10px 20px;
     border: none;
     border-radius: 10px;
     text-decoration: none;
     font-weight: 500;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color var(--transition-duration) ease, 
+                transform var(--transition-duration) ease, 
+                color var(--transition-duration) ease;
     cursor: pointer;
 }
 
-nav ul li a:hover, button:hover {
-    background-color: #35615b;
+/* Effet de survol pour les liens et boutons */
+.navbar__link:hover, .btn:hover {
+    background-color: var(--hover-color);
+    color: var(--text-hover-color);
     transform: scale(1.05);
+}
+
+/* Animation de fondu pour le titre */
+#title {
+    animation: fadeIn var(--transition-duration) ease-in-out;
 }
 
 @keyframes fadeIn {
@@ -79,4 +75,11 @@ nav ul li a:hover, button:hover {
     display: flex;
     justify-content: center;
     color: #000e1f;
+}
+
+.text-info {
+    margin-bottom: 40px;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
 }
