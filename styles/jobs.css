@@ -1,6 +1,6 @@
 html {
     background-color: #1e1e1e;
-    color: #35615b;
+    color: #ffffff;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -39,64 +39,11 @@ html {
     border-radius: 10px;
 }
 
-nav {
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #121212;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
 .text-info {
     margin-bottom: 40px;
     background-color: #222;
     padding: 20px;
     border-radius: 10px;
-}
-
-#title {
-    animation: fadeIn 2s ease;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-nav ul li a, button {
-    background-color: #645f5f;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    cursor: pointer;
-}
-
-nav ul li a:hover, button:hover {
-    background-color: #35615b;
-    transform: scale(1.05);
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
 }
 
 .footer {
@@ -112,4 +59,79 @@ nav ul li a:hover, button:hover {
     display: flex;
     justify-content: center;
     color: #000e1f;
+}
+
+nav {
+    padding: 15px 0;
+    background-color: #1e1e1e;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #121212;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#title {
+    animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+nav ul li a,
+button {
+    background-color: #4e4949;
+    color: #ffffff; /* Pour rendre le texte des boutons lisible */
+    padding: 12px 25px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+nav ul li a:hover,
+button:hover {
+    background-color: #42855b;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    nav ul li a,
+    button {
+        padding: 10px;
+    }
+}
+
+nav ul li a:focus,
+button:focus {
+    outline: 3px solid #42855b;
+    outline-offset: 3px;
 }
