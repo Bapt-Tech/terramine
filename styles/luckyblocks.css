@@ -120,3 +120,10 @@ button:focus {
     padding: 20px;
     border-radius: 10px;
 }
+
+.luckyblock-op {
+    margin-bottom: 40px;
+    background-color: #101013;
+    padding: 20px;
+    border-radius: 10px;
+}
