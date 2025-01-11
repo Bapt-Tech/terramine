@@ -1,14 +1,12 @@
-# Regles : 
+# Règles : 
 ## 1 : Gameplay Général
 1.1 : Il est interdit d'utiliser un logiciel, add-on ou mod qui pourrait modifier le gameplay du jeu de façon à faciliter l'avancement. (Sanction de niveau 4)
 
 1.2 : Il est interdit de porter atteinte à la dignité de quelqu'un en dehors ou dans le serveur pour cause de pillage etc... (Sanction de niveau 1-4)
 
-1.3 : L'utilisation de Pseudos, Photos de profil ou tout autre artéfact pouvant tromper le joueur dans une démarche nécessitant un membre du staff est interdite. (Sanction de niveau 2-4)
+1.3 : Lors de pillages, il est interdit de tuer le même joueur plus de 5 fois. (Sanction de niveau 2-4)
 
-1.4 : Lors de pillages, il est interdit de tuer le même joueur  plus de 5 fois. (Sanction de niveau 2-4)
-
-1.5 : Il est interdit de tuer un membre du staff. (Sanction de niveau 4)
+1.4 : Il est interdit de tuer un membre du staff. (Sanction de niveau 4)
 
 ## 2 : Chat et conversations
 2.1 : Tout propos explicite est interdit dans le Chat ou dans le serveur Discord. (Sanction de niveau 1-4)
@@ -29,25 +27,36 @@
 
 2.9 : Il est interdit d'utiliser des pseudos, noms, ou skins choquants et provocateurs. (Sanction de niveau 4-5)
 
+2.10 : L'utilisation de Pseudos, Photos de profil ou tout autre artéfact pouvant tromper le joueur dans une démarche nécessitant un membre du staff est interdite. (Sanction de niveau 2-4)
+
 ## 3 : Bon état du serveur
 3.1 : Il est interdit d'utiliser toute technique pour faire lagger/crasher le serveur. (Sanction de niveau 4) 
 
-3.2 : Il est interdit d'utiliser des bugs, erreurs ou moyens de simplifier le gameplay fortement. (Sanction de niveau 4)
-
-3.3 : Toute dégradation du spawn est interdite. (Sanction de niveau 4-5)
+3.2 : Toute dégradation du spawn est interdite. (Sanction de niveau 4-5)
 
 ## 4 : Échange et commerce
 4.1 : Il est interdit d'arnaquer, ou de tromper un joueur par toute facon. (Sanction de niveau 3-4)
 
 4.2 : Il est interdit de fausser, tourner à son avantage flagrant le market. (Sanction de niveau 4)
 
+4.3 : Les échanges d'items/blocks utilisant des monnaies réelles sont interdites. (Sanction de niveau 4-5)
+
 ## 5 : Events
 5.1 : Toute triche durant les Events proposés par le staff sont interdites. (Sanction de niveau 3-4)
 
-5.2 : Les règles spécifiques pour les Events mises à disposition des joueurs sont à appliquer. (Sanction de niveau 1-5)
+5.2 : Les règles spécifiques pour les Events mises à disposition des joueurs sont à appliquer. (Sanction de niveau 1-5 en cas de non respect)
 
 ## 6 : Builds
 6.1 : Le griefing de batiments crées par le staff est interdit. (Sanction de niveau 4-5)
+
+## 7 : Bugs et erreurs dans le code du serveur
+7.1 : L'utilisation de bugs dans le code du serveur sont interdits. (Sanction de niveau 4-5)
+
+7.2 : Ne pas signaler un bug trouvé est prohibé. (Sanction de niveau 4-5)
+
+7.3 : Mentir au staff en cas de duplication ou de bugs est interdit. (Sanction de niveau 4-5)
+
+7.4 : Cacher au staff des utilisateurs utilisant des bugs/duplications est formellement interdit. (Sanction de niveau 4-5)
 
 ## Sanctions
 Les sanctions ont une graduation, de 1 à 5 : 

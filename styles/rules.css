@@ -127,6 +127,6 @@ button:focus {
 }
 
 .important {
-    color: red;
+    color: rgb(44, 47, 61);
     font-weight: bold;
 }
