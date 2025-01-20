@@ -41,6 +41,14 @@ html {
     color: #808080;
 }
 
+.content-exclusiveItems {
+    margin-bottom: 40px;
+    background-color: #161515;
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
 nav {
     padding: 15px 0;
     background-color: #1e1e1e;
