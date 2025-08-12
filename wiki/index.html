@@ -5,22 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TerraMine Wiki</title>
   <link rel="icon" type="image/x-icon" href="/terramine/assets/favicon.ico">
-  <link rel="stylesheet" href="/terramine/assets/wiki.css">
+  <link rel="stylesheet" href="/terramine/assets/terramine/wiki.css">
 </head>
 <body>
   <header>
-    <h1><a href="/wiki/index" style="text-decoration: none; color: inherit;">TerraMine Wiki</a></h1>
+    <h1><a href="/terramine/wiki/index" style="text-decoration: none; color: inherit;">TerraMine Wiki</a></h1>
     <nav>
-      <a href="/wiki/commands">Commands</a>
-      <a href="/wiki/nodes">Blocks</a>
-      <a href="/wiki/items">Items</a>
-      <a href="/wiki/mods">Mods</a>
-      <a href="/wiki/mapgen">Mapgen</a>
-      <a href="/wiki/machines">Machines</a>
-      <a href="/wiki/armors">Armors</a>
-      <a href="/wiki/tools">Tools</a>
-      <a href="/wiki/plants">Plants</a>
-      <a href="/wiki/getstarted">Get Started</a>
+      <a href="/terramine/wiki/commands">Commands</a>
+      <a href="/terramine/wiki/nodes">Blocks</a>
+      <a href="/terramine/wiki/items">Items</a>
+      <a href="/terramine/wiki/mods">Mods</a>
+      <a href="/terramine/wiki/mapgen">Mapgen</a>
+      <a href="/terramine/wiki/machines">Machines</a>
+      <a href="/terramine/wiki/armors">Armors</a>
+      <a href="/terramine/wiki/tools">Tools</a>
+      <a href="/terramine/wiki/plants">Plants</a>
+      <a href="/terramine/wiki/getstarted">Get Started</a>
     </nav>
   </header>
   <section>
@@ -28,7 +28,7 @@
     <ul id="results"></ul>
     <a style="color: brown;">Wiki completed at ~25%.</a><br>
     <a style="color: brown;">Stay tuned!</a>
-    <h2>Season 2 opens soon! Check changelog <a href="/wiki/season2">here</a>!</h2>
+    <h2>Season 2 opens soon! Check changelog <a href="/terramine/wiki/season2">here</a>!</h2>
   </section>
   <script>
     const data = [
@@ -80,7 +80,7 @@
       { type: "mods", name: "Terradium", url: "/mods/terradium" },
       { type: "mods", name: "Protection", url: "/mods/terraprot" },
       { type: "machines", name: "Cobblebreaker", url: "/machines/cobblebreaker" },
-      { type: "plants", name: "Terradium Plant", url:"/wiki/plants/terradium"},
+      { type: "plants", name: "Terradium Plant", url:"/terramine/wiki/plants/terradium"},
       { type: "version", name: "WebsiteVersion", url: "/version"},
       { type: "comingsoon", name: "ComingSoon", url: "/comingsoon" }
     ];
@@ -89,7 +89,7 @@
       const query = event.target.value.toLowerCase();
       const results = data.filter(item => item.name.toLowerCase().includes(query));
       document.getElementById("results").inne = results
-        .map(item => `<li><a href="/wiki${item.url}">${item.type.toUpperCase()}: ${item.name}</a></li>`)
+        .map(item => `<li><a href="/terramine/wiki${item.url}">${item.type.toUpperCase()}: ${item.name}</a></li>`)
         .join("");
     }
   </script>
