@@ -1,101 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TerraMine Wiki</title>
-  <link rel="icon" type="image/x-icon" href="/terramine/assets/favicon.ico">
-  <link rel="stylesheet" href="/terramine/assets/wiki.css">
-</head>
-<body>
-  <header>
-    <h1><a href="/terramine/wiki/index" style="text-decoration: none; color: inherit;">TerraMine Wiki</a></h1>
-    <nav>
-      <a href="/terramine/wiki/commands">Commands</a>
-      <a href="/terramine/wiki/nodes">Blocks</a>
-      <a href="/terramine/wiki/items">Items</a>
-      <a href="/terramine/wiki/mods">Mods</a>
-      <a href="/terramine/wiki/mapgen">Mapgen</a>
-      <a href="/terramine/wiki/machines">Machines</a>
-      <a href="/terramine/wiki/armors">Armors</a>
-      <a href="/terramine/wiki/tools">Tools</a>
-      <a href="/terramine/wiki/plants">Plants</a>
-      <a href="/terramine/wiki/getstarted">Get Started</a>
-    </nav>
-  </header>
-  <section>
-    <input type="text" class="search" placeholder="Search..." oninput="filterResults(event)">
-    <ul id="results"></ul>
-    <a style="color: brown;">Wiki completed at ~25%.</a><br>
-    <a style="color: brown;">Stay tuned!</a>
-    <h2>Season 2 opens soon! Check changelog <a href="/terramine/wiki/season2">here</a>!</h2>
-  </section>
-  <script>
-    const data = [
-      { type: "command", name: "teleport", url: "/commands/teleport" },
-      { type: "command", name: "tpr", url: "/commands/teleport"},
-      { type: "command", name: "rtp", url: "/commands/teleport"},
-      { type: "command", name: "spawn", url: "/commands/teleport"},
-      { type: "command", name: "shop", url: "/commands/shop" },
-      { type: "command", name: "sell", url: "/commands/shop" },
-      { type: "command", name: "pay", url: "/commands/economy" },
-      { type: "command", name: "market", url: "/commands/shop" },
-      { type: "command", name: "buyer", url: "/commands/shop" },
-      { type: "command", name: "home", url: "/commands/home" },
-      { type: "command", name: "sethome", url: "/commands/home" },
-      { type: "command", name: "balance", url: "/commands/economy" },
-      { type: "command", name: "rewards", url: "/commands/economy" },
-      { type: "command", name: "tpr_mute", url: "/commands/teleport" },
-      { type: "command", name: "tpr_unmute", url: "/commands/teleport" },
-      { type: "command", name: "tphr", url: "/commands/teleport" },
-      { type: "command", name: "cltime", url: "/commands/other"},
-      { type: "command", name: "jobs", url: "/commands/other"},
-      { type: "command", name: "homes", url: "/commands/homes"},
-      { type: "command", name: "craft", url: "/commands/craft"},
-      { type: "items", name: "Gear", url: "/items/gear" },
-      { type: "items", name: "Angelic Water", url: "/items/waters" },
-      { type: "items", name: "Fake Water", url: "/items/waters" },
-      { type: "node", name: "Terradium", url: "/nodes/terradiumnodes" },
-      { type: "node", name: "Cave Block", url: "/nodes/caveblock" },
-      { type: "node", name: "Protection Blocks", url: "/nodes/protectionblocks" },
-      { type: "mapgen", name: "Frenchylola", url: "/mapgen/frenchylola" },
-      { type: "mapgen", name: "Kingium", url: "/mapgen/kingium" },
-      { type: "mapgen", name: "Kadaxium", url: "/mapgen/kadaxium" },
-      { type: "mapgen", name: "Terradium", url: "/mapgen/terradium" },
-      { type: "mapgen", name: "Thophion", url: "/mapgen/thophion" },
-      { type: "mapgen", name: "Skybuildium", url: "/mapgen/skybuildium" },
-      { type: "mapgen", name: "Albanium", url: "/mapgen/albanium" },
-      { type: "armor", name: "Albanium", url: "/armors/albanium"},
-      { type: "armor", name: "Frenchylola", url: "/armors/frenchylola"},
-      { type: "armor", name: "Kadaxium", url: "/armors/kadaxium"},
-      { type: "armor", name: "Terradium", url: "/armors/terradium"},
-      { type: "armor", name: "Thophion", url: "/armors/thophion"},
-      { type: "protection", name: "Frenchylola", url: "/nodes/protectionblocks" },
-      { type: "protection", name: "Kadaxium", url: "/nodes/protectionblocks" },
-      { type: "protection", name: "Terradium", url: "/nodes/protectionblocks" },
-      { type: "protection", name: "Thophion", url: "/nodes/protectionblocks" },
-      { type: "protection", name: "Skybuildium", url: "/nodes/protectionblocks" },
-      { type: "protection", name: "Albanium", url: "/nodes/protectionblocks" },
-      { type: "protection", name: "Kingium", url: "/nodes/protectionblocks" },
-      { type: "mods", name: "Terradium", url: "/mods/terradium" },
-      { type: "mods", name: "Protection", url: "/mods/terraprot" },
-      { type: "machines", name: "Cobblebreaker", url: "/machines/cobblebreaker" },
-      { type: "plants", name: "Terradium Plant", url:"/terramine/wiki/plants/terradium"},
-      { type: "version", name: "WebsiteVersion", url: "/version"},
-      { type: "comingsoon", name: "ComingSoon", url: "/comingsoon" }
-    ];
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TerraMine Wiki</title>
+    <link rel="icon" type="image/x-icon" href="/terramine/assets/favicon.ico">
+    <link rel="stylesheet" href="/terramine/assets/wiki.css">
+  </head>
+  <body>
+    <header>
+      <h1><a href="/terramine/wiki/index" style="text-decoration: none; color: inherit;">TerraMine Wiki</a></h1>
+      <nav>
+        <a href="/terramine/wiki/commands">Commands</a>
+        <a href="/terramine/wiki/nodes">Blocks</a>
+        <a href="/terramine/wiki/items">Items</a>
+        <a href="/terramine/wiki/mods">Mods</a>
+        <a href="/terramine/wiki/mapgen">Mapgen</a>
+        <a href="/terramine/wiki/machines">Machines</a>
+        <a href="/terramine/wiki/armors">Armors</a>
+        <a href="/terramine/wiki/tools">Tools</a>
+        <a href="/terramine/wiki/plants">Plants</a>
+        <a href="/terramine/wiki/getstarted">Get Started</a>
+      </nav>
+    </header>
+    <section>
+      <input type="text" class="search" placeholder="Search..." oninput="filterResults(event)">
+      <ul id="results"></ul>
+      <a style="color: brown;">Wiki completed at ~25%.</a><br>
+      <a style="color: brown;">Stay tuned!</a>
+      <h2>Season 2 opens soon! Check changelog <a href="/terramine/wiki/season2">here</a>!</h2>
+    </section>
+    <script>
+      const data = [
+        { type: "command", name: "teleport", url: "/commands/teleport" },
+        { type: "command", name: "tpr", url: "/commands/teleport"},
+        { type: "command", name: "rtp", url: "/commands/teleport"},
+        { type: "command", name: "spawn", url: "/commands/teleport"},
+        { type: "command", name: "shop", url: "/commands/shop" },
+        { type: "command", name: "sell", url: "/commands/shop" },
+        { type: "command", name: "pay", url: "/commands/economy" },
+        { type: "command", name: "market", url: "/commands/shop" },
+        { type: "command", name: "buyer", url: "/commands/shop" },
+        { type: "command", name: "home", url: "/commands/home" },
+        { type: "command", name: "sethome", url: "/commands/home" },
+        { type: "command", name: "balance", url: "/commands/economy" },
+        { type: "command", name: "rewards", url: "/commands/economy" },
+        { type: "command", name: "tpr_mute", url: "/commands/teleport" },
+        { type: "command", name: "tpr_unmute", url: "/commands/teleport" },
+        { type: "command", name: "tphr", url: "/commands/teleport" },
+        { type: "command", name: "cltime", url: "/commands/other"},
+        { type: "command", name: "jobs", url: "/commands/other"},
+        { type: "command", name: "homes", url: "/commands/homes"},
+        { type: "command", name: "craft", url: "/commands/craft"},
+        { type: "items", name: "Gear", url: "/items/gear" },
+        { type: "items", name: "Angelic Water", url: "/items/waters" },
+        { type: "items", name: "Fake Water", url: "/items/waters" },
+        { type: "node", name: "Terradium", url: "/nodes/terradiumnodes" },
+        { type: "node", name: "Cave Block", url: "/nodes/caveblock" },
+        { type: "node", name: "Protection Blocks", url: "/nodes/protectionblocks" },
+        { type: "mapgen", name: "Frenchylola", url: "/mapgen/frenchylola" },
+        { type: "mapgen", name: "Kingium", url: "/mapgen/kingium" },
+        { type: "mapgen", name: "Kadaxium", url: "/mapgen/kadaxium" },
+        { type: "mapgen", name: "Terradium", url: "/mapgen/terradium" },
+        { type: "mapgen", name: "Thophion", url: "/mapgen/thophion" },
+        { type: "mapgen", name: "Skybuildium", url: "/mapgen/skybuildium" },
+        { type: "mapgen", name: "Albanium", url: "/mapgen/albanium" },
+        { type: "armor", name: "Albanium", url: "/armors/albanium"},
+        { type: "armor", name: "Frenchylola", url: "/armors/frenchylola"},
+        { type: "armor", name: "Kadaxium", url: "/armors/kadaxium"},
+        { type: "armor", name: "Terradium", url: "/armors/terradium"},
+        { type: "armor", name: "Thophion", url: "/armors/thophion"},
+        { type: "protection", name: "Frenchylola", url: "/nodes/protectionblocks" },
+        { type: "protection", name: "Kadaxium", url: "/nodes/protectionblocks" },
+        { type: "protection", name: "Terradium", url: "/nodes/protectionblocks" },
+        { type: "protection", name: "Thophion", url: "/nodes/protectionblocks" },
+        { type: "protection", name: "Skybuildium", url: "/nodes/protectionblocks" },
+        { type: "protection", name: "Albanium", url: "/nodes/protectionblocks" },
+        { type: "protection", name: "Kingium", url: "/nodes/protectionblocks" },
+        { type: "mods", name: "Terradium", url: "/mods/terradium" },
+        { type: "mods", name: "Protection", url: "/mods/terraprot" },
+        { type: "machines", name: "Cobblebreaker", url: "/machines/cobblebreaker" },
+        { type: "plants", name: "Terradium Plant", url:"/terramine/wiki/plants/terradium"},
+        { type: "version", name: "WebsiteVersion", url: "/version"},
+        { type: "comingsoon", name: "ComingSoon", url: "/comingsoon" }
+      ];
 
-    function filterResults(event) {
-      const query = event.target.value.toLowerCase();
-      const results = data.filter(item => item.name.toLowerCase().includes(query));
-      document.getElementById("results").inne = results
-        .map(item => `<li><a href="/terramine/wiki${item.url}">${item.type.toUpperCase()}: ${item.name}</a></li>`)
-        .join("");
-    }
-  </script>
-</body>
-<footer>
-  &copy; 2025 TerraMine Wiki. All rights reserved.
-  
-  <a href="/license">Licenses</a>
+      function filterResults(event) {
+        const query = event.target.value.toLowerCase();
+        const results = data.filter(item => item.name.toLowerCase().includes(query));
+        document.getElementById("results").inne = results
+          .map(item => `<li><a href="/terramine/wiki${item.url}">${item.type.toUpperCase()}: ${item.name}</a></li>`)
+          .join("");
+      }
+    </script>
+  </body>
+  <footer>
+    &copy; 2025 TerraMine Wiki. All rights reserved.
+    <a href="/terramine/license">Licenses</a>
+  </footer>
 </html>
